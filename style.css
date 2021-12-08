@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #010044;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.flex_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.m {
+  background-color: hotpink;
+}
+
+.m_two {
+  background-color: cyan;
+}
+
+path {
+  stroke-width: 2;
+  stroke: rgb(153, 253, 207);
+  fill: transparent;
+  transition: 1s;
+}
+
+.svg {
+  margin-top: calc(-100%);
+  animation: live infinite 2s;
+}
+
+.svg.no_margin {
+  margin-top: 0%;
+}
+
+@keyframes live {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(480deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(180deg);
+  }
+}
+
+.sign {
+  height: 10px;
+  width: 500px;
+  color: white;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 9px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
